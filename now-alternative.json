@@ -1,0 +1,36 @@
+{
+  "version": 2,
+  "builds": [{ "src": "server.js", "use": "@now/node-server" }],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/server.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/echo",
+      "dest": "/server.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/mine",
+      "dest": "/server.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/packedtrx",
+      "dest": "/server.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/packedtrx",
+      "dest": "/server.js",
+      "methods": ["POST"]
+    },
+    {
+      "src": "/trace",
+      "dest": "/server.js",
+      "methods": ["GET"]
+    }
+  ]
+}
